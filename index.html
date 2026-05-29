@@ -1,0 +1,40 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Photo Roll </title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+     :root {
+      --bg:        #f2c7da;
+      --bg-box:    #eda4c3;
+      --text:      #a32e61;
+      --accent:    #f5dfc4;
+      --border:    #fab4c9;
+      --muted:     #9c435d;
+    }
+
+    <div class="film-container">
+  <!-- Top and bottom sprocket borders running along the entire track -->
+  <div class="sprockets top"></div>
+  
+  <div class="film-track">
+    <div class="frame"><img src="https://picsum.photos" alt="Photo 1"></div>
+    <div class="frame"><img src="https://picsum.photos" alt="Photo 2"></div>
+    <div class="frame"><img src="https://picsum.photos" alt="Photo 3"></div>
+    <div class="frame"><img src="https://picsum.photos" alt="Photo 4"></div>
+    
+    <!-- Duplicate images for seamless infinite scroll -->
+    <div class="frame"><img src="https://picsum.photos" alt="Photo 1"></div>
+    <div class="frame"><img src="https://picsum.photos" alt="Photo 2"></div>
+    <div class="frame"><img src="https://picsum.photos" alt="Photo 3"></div>
+    <div class="frame"><img src="https://picsum.photos" alt="Photo 4"></div>
+  </div>
+  
+  <div class="sprockets bottom"></div>
+  <!-- 3D Shadow overlay to create depth on the edges -->
+  <div class="film-shadow"></div>
+</div>
+</html>
